@@ -8,8 +8,11 @@ tabla2=pd.DataFrame(apartamento2,columns=['edades'])
 tabla3=pd.read_csv('./data/empleados.csv')
 
 
-print(tabla3)
+#EFECTUANDO FILTROS CON PYTHON
+#1 .DEFINIR UNA CONDICION LOGICA 
 
+filtro=tabla3.query('edad<28 and cargo=="analista1"')
+print(filtro)
 
 
 # #####################################################
